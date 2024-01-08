@@ -1,6 +1,7 @@
 <template >
     <div>
-        ciaooooooo
+     <h1>{{ info[0].about }}</h1>   
+     <h2>{{ info[0].home }}</h2>
     </div>
 </template>
 
@@ -11,7 +12,14 @@ data() {
     return {
         
     }
-},    
+},   
+
+props:{
+    info:{
+        type:Array,
+        required:true,
+    }
+}
 }
 </script>
 

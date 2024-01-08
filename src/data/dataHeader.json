@@ -1,0 +1,13 @@
+[
+    {
+      "id": 1,
+      "logo": "../assets/img/medical_logo_1x_light.png",
+      "home": "Home",
+      "about":"About",
+      "departments":"departments",
+      "articles":"Articlea",
+      "appointment":"Make appointment"
+    }
+   
+    
+  ]
