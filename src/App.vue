@@ -1,5 +1,5 @@
 <template>
- <AppHeader :info="infoHeader"/>
+ <AppHeader :info="infoHeader" />
  <AppMain/>
 
  <AppFooter/>
@@ -24,8 +24,8 @@ export default{
 
   data() {
     return {
-      infoHeader:[{}]
-    }
+      infoHeader:[]
+    };
   },
 
  
@@ -35,7 +35,7 @@ export default{
       axios.get('../src/data/dataHeader.json')  
         .then((response)=>{
           console.log(response.data);
-          this.infoHeader = response.data;
+          this.infoHeader = response.data.header;
           
         })
         .catch(error => {

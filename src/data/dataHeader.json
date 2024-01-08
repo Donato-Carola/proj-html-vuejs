@@ -1,13 +1,15 @@
-[
+{
+  "header" : [
     {
       "id": 1,
-      "logo": "../assets/img/medical_logo_1x_light.png",
+      "logo": "../assets/img/client-logos-1.png",
       "home": "Home",
       "about":"About",
       "departments":"departments",
-      "articles":"Articlea",
+      "articles":"Articles",
       "appointment":"Make appointment"
     }
    
     
   ]
+}
