@@ -1,17 +1,42 @@
 {
-  "header" : [
+  "header": [
     {
       "id": 1,
       "logo": "/img/medical_logo_1x_light.png",
       "home": "Home",
-      "about":"About",
-      "departments":"departments",
-      "articles":"Articles",
-      "appointment":"Make appointment",
-      "title":"Caring For Life",
-      "text":"kign words can be short and easy to speak, but their echoes are truly endless. Avada Health focuses on you as if it was our own family."
+      "about": "About",
+      "departments": "departments",
+      "articles": "Articles",
+      "appointment": "Make appointment",
+      "title": "Caring For Life",
+      "text": "kign words can be short and easy to speak, but their echoes are truly endless. Avada Health focuses on you as if it was our own family."
     }
-   
-    
+  ],
+
+  "main": [
+    {
+      "firstBox": [
+        {
+          "imagine": "/public/img/icon-1.png",
+          "title": "same day appointments",
+          "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo"
+        },
+        {
+          "imagine": "/public/img/icon-2.png",
+          "title": "world class facilities",
+          "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo"
+        },
+        {
+          "imagine": "/public/img/icon-3.png",
+          "title": "expert doctors",
+          "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo"
+        },
+        {
+          "imagine": "/public/img/icon-4.png",
+          "title": "complementary therapies",
+          "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo"
+        }
+      ]
+    }
   ]
 }
