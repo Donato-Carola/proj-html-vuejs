@@ -1,9 +1,10 @@
 <template >
 <header>
-    <section class=" container d-flex justify-content-between w-100 ">
-        <div> 
-            <img :src=" info[0].logo " alt="logo">
-        </div>
+    <img src="/public/img/header-image-homepage.jpg" alt="">
+    <section class=" container d-flex justify-content-between align-items-center pt-2">
+       
+            <img class="w-25" :src=" info[0].logo " alt="logo">
+       
     
     <ul class="text-center">
         <li>
@@ -52,14 +53,20 @@ props:{
 <style lang="scss" scoped>
 
 header{
-    background-image: url(../assets/img/header-image-homepage.jpg);
-    object-fit: cover;
-    height:500px;
+    position: relative;
 }
+
+section{
+    height: 100px;
+
+}
+
 ul{
     list-style: none;
     display: flex;
-    
+    li{
+        padding-left: 1rem;
+    }
     
 }
     

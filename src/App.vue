@@ -11,7 +11,8 @@
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
-import axios from 'axios';
+
+import data from './data/dataHeader.json'
 
 export default{
   components: {
@@ -24,29 +25,13 @@ export default{
 
   data() {
     return {
-      infoHeader:[{}]
+      infoHeader:data.header
     };
   },
 
  
 
-  methods: {
-    fetchData() {
-      axios.get('../src/data/dataHeader.json')  
-        .then((response)=>{
-          console.log(response.data);
-          this.infoHeader = response.data.header;
-          
-        })
-        .catch(error => {
-          console.error('Errore nel caricamento dei dati:', error);
-        });
-    }
-  },
-
-   created() {
-    this.fetchData();
-  },
+ 
 }
 
 
