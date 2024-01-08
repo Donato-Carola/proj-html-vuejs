@@ -1,6 +1,6 @@
 <template >
     <div>
-        addio
+        FOOTER
     </div>
 </template>
 <script>

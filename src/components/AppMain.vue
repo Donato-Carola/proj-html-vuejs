@@ -1,6 +1,6 @@
 <template >
     <div>
-        buon giorno
+        MAIN
     </div>
 </template>
 <script>
