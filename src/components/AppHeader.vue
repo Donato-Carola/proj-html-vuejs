@@ -1,7 +1,7 @@
 <template>
   <header>
     <section 
-      class="topSection container d-flex justify-content-between align-items-center pt-4 "
+      class=" topSection container d-flex justify-content-between align-items-center pt-4 "
     >
       <img class="w-25" :src="info[0].logo" alt="logo" />
 
