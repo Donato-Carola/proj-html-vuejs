@@ -56,7 +56,7 @@ export default {
 <style lang="scss" scoped>
 header {
   background-image: url(/img/header-image-homepage.jpg);
-  object-fit: cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 

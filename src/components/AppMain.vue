@@ -29,10 +29,10 @@
     </div> 
       </article>
 
-<article class="articlePlus">
+
+ 
   <PlusArticle/>
 
-</article>
 
 
     </section>

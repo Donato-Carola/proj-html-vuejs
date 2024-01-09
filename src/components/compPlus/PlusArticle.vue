@@ -1,7 +1,9 @@
 <template >
     <div>
+        
        <tittlePlus/>
-       <boxPlus/>
+      
+       <cardPlus/>
        <formPlus/>
     </div>
 </template>
@@ -9,12 +11,12 @@
 
 <script> 
 import tittlePlus from '/src/components/compPlus/titlePlus.vue';
-import boxPlus from './boxPlus.vue';
+import cardPlus from './cardPlus.vue';
 import formPlus from './formPlus.vue';
 export default {
    components:{
     tittlePlus,
-    boxPlus,
+    cardPlus,
     formPlus
    },
 
@@ -27,6 +29,10 @@ export default {
     },
 }
 </script>
+
 <style lang="scss" scoped>
-    
+@use '../../styles/partials/mixins' as *;
+
+
+     
 </style>
