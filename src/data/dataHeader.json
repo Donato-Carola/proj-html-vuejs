@@ -11,7 +11,28 @@
       "title": "Caring For Life",
       "text": "kign words can be short and easy to speak, but their echoes are truly endless. Avada Health focuses on you as if it was our own family."
     }
-  ]
+  ],
 
+  "footer":[
+    {
+     "id":2,
+     "logo":"/img/medical_logo_1x_dark.png",
+     "text":"  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae luptatem accusantium, remaperiamsiat. Voluptatem accusest etsium doloremque laudaien. Lorem ipsum sits dolores ets unser.",
+     "info":"learn more about us",
+       "contact":
+        {
+            "position":"121 king street, London United Kingdom",
+            "tell":"1.800.458.556"
+        }
+     ,
+     "medical":"medical departments",
+      "specialist":"Cardiology",
+      "specialist1":"Pediactrics",
+      "specialist2":"Diabetes Care",
+      "specialist3":"Pre-natel Care",
+      "specialist4":"Ultrasound Echocardiogram"
+
+    }
+  ]
  
 }

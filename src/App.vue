@@ -2,7 +2,7 @@
  <AppHeader :info="infoHeader" />
  <AppMain/>
 
- <AppFooter/>
+ <AppFooter :infoFooter="infoFooter"/>
 </template>
 
 
@@ -25,7 +25,8 @@ export default{
 
   data() {
     return {
-      infoHeader:data.header
+      infoHeader:data.header,
+      infoFooter:data.footer
     };
   },
 
