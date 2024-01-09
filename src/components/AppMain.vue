@@ -29,12 +29,18 @@
     </div> 
       </article>
 
+<article class="articlePlus">
+  <PlusArticle/>
+
+</article>
+
 
     </section>
   </main>
 </template>
 
 <script>
+import PlusArticle from "./compPlus/PlusArticle.vue";
 import firstCardMain from "./firstCardMain.vue";
 import secondCardMain from "./secondCardMain.vue";
 import thirdCardMain from "./thirdCardMain.vue";
@@ -43,7 +49,8 @@ export default {
   components: {
     firstCardMain,
     secondCardMain,
-    thirdCardMain
+    thirdCardMain,
+    PlusArticle
   },
   data() {
     return {
