@@ -50,7 +50,7 @@ position: relative;
   height: 100%;
   display: flex;
   align-items: center;
-  animation: slideRight 12s infinite linear; 
+  animation: slideRight 8s infinite linear; 
  
   
   }
@@ -60,17 +60,18 @@ div img {
   flex: 0 0 25%; // Larghezza di ogni icona, occupa un quarto dello spazio
   height: auto; // Occupa tutta l'altezza della section
   opacity: 0;
-  animation:fadeInOut 20s infinite linear;
+  animation:fadeInOut 12s infinite linear;
   
 }
 
 @keyframes slideRight {
   0% {
-    transform: translateX(50%);
+    transform: translateX(0%);
   }
   100%{
     transform: translateX(-100%);
   }
+
 
 }
 
@@ -78,8 +79,8 @@ div img {
     0%, 100% {
     opacity: 1;
   }
-  65% {
-    opacity: 0;
+  50% {
+    opacity: 1;
   }
 }
 </style>
