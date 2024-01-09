@@ -4,6 +4,9 @@
       <div class="padding">
         <img src="/img/icon-5.png" alt="icona" />
         <h1 class="text-uppercase">meet our doctors</h1>
+        <div class="w-100 d-flex justify-content-center ">
+          <hr class="linea">
+         </div>
 
         <p>
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -80,5 +83,9 @@ div.padding{
 
 h1 {
   color: black;
+}
+
+hr.linea{
+   @include lineSize;
 }
 </style>

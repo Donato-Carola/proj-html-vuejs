@@ -24,8 +24,9 @@
       </article>
 
       <article class="thirdArticle">
-        <div class="ridimensiona"></div>   
+        <div class="ridimensiona">  
      <thirdCardMain/>
+    </div> 
       </article>
 
 

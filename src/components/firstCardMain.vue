@@ -22,10 +22,9 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-  img{
-    object-fit: cover;
-    width: 70px;
-    height: 70px;
-    
+@use "../styles/partials/mixins" as *;
+img{
+   @include imgSize;
   }
+
 </style>

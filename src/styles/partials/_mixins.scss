@@ -7,3 +7,16 @@
       padding: 0 8rem 1.5rem 8rem;
       text-align: center;  
     }
+
+@mixin imgSize{
+
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
+    
+ 
+}
+
+@mixin lineSize{
+  width: 35%;
+}
