@@ -5,6 +5,7 @@
       
        <cardPlus/>
        <formPlus/>
+       <logosPlus/>
     </div>
 </template>
 
@@ -13,11 +14,13 @@
 import tittlePlus from '/src/components/compPlus/titlePlus.vue';
 import cardPlus from './cardPlus.vue';
 import formPlus from './formPlus.vue';
+import logosPlus from './logosPlus.vue';
 export default {
    components:{
     tittlePlus,
     cardPlus,
-    formPlus
+    formPlus,
+    logosPlus
    },
 
 

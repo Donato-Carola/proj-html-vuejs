@@ -6,7 +6,7 @@
         <h2>{{ cards.title }}</h2>
         <img :src="cards.img" alt="">
         <p>{{ cards.content }}</p>
-        <button class="border-light ps-5 pe-5">{{ cards.textButton }}</button>
+        <button class=" ps-5 pe-5">{{ cards.textButton }}</button>
     </div>
       </div>
       
@@ -59,6 +59,7 @@ export default {
         color: white;
         background-color: rgba(0, 0, 0, 0);
         padding: 0.5rem 1rem;
+        border: 0.5px solid white;
         
         
     }
