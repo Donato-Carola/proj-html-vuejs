@@ -14,6 +14,7 @@
           ab illo inventore veritatis et quasi architecto beatae
         </p>
       </div>
+      <div class="container">
       <div class="row">
         <div v-for="doctors in doctor" class="col-lg-4">
           <div class="card">
@@ -33,6 +34,7 @@
             
           </div>
         </div>
+      </div>
       </div>
     </div>
   </section>
