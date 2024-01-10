@@ -5,12 +5,22 @@
     >
       <img class="w-25" :src="info[0].logo" alt="logo" />
 
-      <ul class="text-uppercase">
-        <li v-for="infotwo in infoTwo" >
-          {{ infotwo.home }}
+      <ul class="text-uppercase firstul">
+        <li class="arrow firstli" v-for="infotwo in infoTwo"
+        @mouseover="showDropdown[infotwo.home] = true"
+       >
+        
+      <div class="d-flex align-content-center align-items-center ">
+          {{ infotwo.home }} <i class="fa-solid fa-chevron-down arrow ps-1"></i>
+        </div>
+          <ul  v-if="showDropdown[infotwo.home]" class="dropdown ulGhost ">
+             <li class="liGhost" v-for="content in dropdownContents[infotwo.home]" @click="closeDropdown(infotwo.home)">
+         <a href="#">{{ content }} </a> 
+             </li>
+          </ul>
         </li>
      
-        <li >
+        <li class="firstli">
             <button  class="border-0 ">{{ info[0].appointment }}</button>
           
         </li>
@@ -31,6 +41,7 @@
 </template>
 
 <script>
+
 export default {
   props: {
     info: {
@@ -39,14 +50,33 @@ export default {
     },
     infoTwo:{
       type:Array,
-      required:true
+      required:true,
+      
     }
   },
 
 
   data() {
-    return {};
+    return {
+      showDropdown: {},
+      dropdownContents:{
+        'Home': ['Contenuto 1A', 'Contenuto 1B'],
+        'About': ['Contenuto 2A', 'Contenuto 2B'],
+        'Departments': ['General Practice', 'Cardiology', 'Pediatrics', 'Diabetes Care', 'Pre-natal Care', 'Ultrasound Echocardiogram'],
+        'Articles': ['Contenuto 4A', 'Contenuto 4B']
+    }
+    };
   },
+
+  methods: {
+  toggleDropdown(home) {
+    this.showDropdown[home] = !this.showDropdown[home];
+  },
+  closeDropdown(home) {
+    this.showDropdown[home] = false;
+  }
+}
+
 };
 </script>
 
@@ -64,15 +94,27 @@ section.topSection {
   }
 }
 
-ul {
-    color: white;
+ul.firstul {
+  color: white;
   list-style: none;
   display: flex;
   align-items: center;
-  li {
+ 
+} 
+li.firstli:hover{
+  color:#327ec7
+}
+i.arrow{
+  display: none;
+}
+li.firstli:hover i.arrow{
+  display: block;
+}
+
+li.firstli {
     padding-left: 1rem;
   }
-}
+
 
 section.more{
     width: 850px;
@@ -96,4 +138,28 @@ section.more{
     button:hover{
       background-color: #327ec7;
     }
+
+    .dropdown {
+  position: absolute;
+  
+  color: black;
+  background-color: #fff; /* Sfondo bianco per il menu */
+  list-style: none;
+  z-index:9999; /* Assicura che il menu a tendina sia sopra gli altri elementi */
+  display: none; /* Inizialmente nascosto */
+  line-height: 5rem;
+  padding: 0 0.5rem 0 0.5rem;
+  
+}
+
+.arrow:hover .dropdown {
+  display:block; /* Mostra il menu a tendina quando si passa con il mouse sopra l'elemento con classe arrow */
+}
+
+a{
+ text-decoration: none;
+ color: black;
+}
+    
+   
 </style>
