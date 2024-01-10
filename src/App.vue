@@ -1,5 +1,5 @@
 <template>
- <AppHeader :info="infoHeader" />
+ <AppHeader :info="infoHeader" :infoTwo="infoHeaderTwo" />
  <AppMain/>
 
  <AppFooter :infoFooter="infoFooter"/>
@@ -13,6 +13,7 @@ import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
 
 import data from './data/dataHeader.json'
+import dataTwo from './data/dataHeaderTwo.json'
 
 export default{
   components: {
@@ -26,7 +27,8 @@ export default{
   data() {
     return {
       infoHeader:data.header,
-      infoFooter:data.footer
+      infoFooter:data.footer,
+      infoHeaderTwo:dataTwo.headertwo
     };
   },
 

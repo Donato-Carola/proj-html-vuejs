@@ -5,19 +5,11 @@
     >
       <img class="w-25" :src="info[0].logo" alt="logo" />
 
-      <ul >
-        <li>
-          {{ info[0].home }}
+      <ul class="text-uppercase">
+        <li v-for="infotwo in infoTwo" >
+          {{ infotwo.home }}
         </li>
-        <li>
-          {{ info[0].about }}
-        </li>
-        <li>
-          {{ info[0].departments }}
-        </li>
-        <li>
-          {{ info[0].articles }}
-        </li>
+     
         <li >
             <button  class="border-0 ">{{ info[0].appointment }}</button>
           
@@ -45,7 +37,12 @@ export default {
       type: Array,
       required: true,
     },
+    infoTwo:{
+      type:Array,
+      required:true
+    }
   },
+
 
   data() {
     return {};
@@ -94,5 +91,9 @@ section.more{
         background-color: #3bafbf;
         padding: 0.5rem 1rem;
         
+    }
+
+    button:hover{
+      background-color: #327ec7;
     }
 </style>

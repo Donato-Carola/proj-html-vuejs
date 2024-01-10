@@ -20,7 +20,7 @@ export default {
         {
           id: 1,
           title: "Emergency Care",
-          img:"/public/img/wave-divider.png",
+          img:"/img/wave-divider.png",
           content:
             "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium laudantium,totam rem aperiam,eaque ",
          textButton:"learn more",
@@ -29,7 +29,7 @@ export default {
         {
             id: 2,
           title: "Expert Diagnostics",
-          img:"/public/img/wave-divider.png",
+          img:"/img/wave-divider.png",
           content:
             "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium laudantium,totam rem aperiam,eaque ",
          textButton:"learn more",
@@ -38,7 +38,7 @@ export default {
         {
             id: 3,
           title: "Superb Rehabilitation",
-          img:"/public/img/wave-divider.png",
+          img:"/img/wave-divider.png",
           content:
             "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium laudantium,totam rem aperiam,eaque ",
          textButton:"learn more",
@@ -62,5 +62,11 @@ export default {
         border: 0.5px solid white;
         
         
+    }
+
+    button:hover{
+      border: 0.5 solid #327ec7;
+      background-color: white;
+      color: #327ec7;
     }
 </style>

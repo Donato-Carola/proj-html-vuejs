@@ -2,14 +2,13 @@
   "header": [
     {
       "id": 1,
-      "logo": "/img/medical_logo_1x_light.png",
-      "home": "Home",
-      "about": "About",
-      "departments": "departments",
-      "articles": "Articles",
-      "appointment": "Make appointment",
+      "logo": "/img/medical_logo_1x_light.png", 
       "title": "Caring For Life",
-      "text": "kign words can be short and easy to speak, but their echoes are truly endless. Avada Health focuses on you as if it was our own family."
+      "text": "kign words can be short and easy to speak, but their echoes are truly endless. Avada Health focuses on you as if it was our own family.",
+
+   
+      "appointment": "Make appointment"
+     
     }
   ],
 

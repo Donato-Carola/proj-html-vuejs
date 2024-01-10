@@ -112,4 +112,8 @@ img{
 hr.linea{
    @include lineSize;
 }
+
+div.card:hover h5{
+  color: #3bafbf;
+}
 </style>

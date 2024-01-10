@@ -1,6 +1,6 @@
 <template >
    
-  <div class="card border-0 col-lg-3 flex-nowrap d-flex align-items-center" >
+  <div class="first card border-0 col-lg-3 flex-nowrap d-flex align-items-center" >
   <img :src="card.image" class="" alt="...">
   <div class="card-body">
     <h5 class="card-title">{{card.title}}</h5>
@@ -25,6 +25,10 @@ export default {
 @use "../styles/partials/mixins" as *;
 img{
    @include imgSize;
+  }
+
+ div.first:hover h5{
+    color: #3bafbf;
   }
 
 </style>
